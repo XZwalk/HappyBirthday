@@ -662,8 +662,8 @@
 
 /* 盒子 */
 .ly-box11 {
-	width: 30%;
-	height: 600px;
+	width: 240px;
+	height: 400px;
 	border: 2px #CCC;
 	background-color: #fff;
 	background-color: rgba(255,255,255,0.6);
@@ -766,8 +766,8 @@
 
 /* 盒子 */
 .ly-box12 {
-	width: 40%;
-	height: 600px;
+	width: 30%;
+	height: 500px;
 	border: 2px #CCC;
 	background-color: #fff;
 	background-color: rgba(255,255,255,0.6);
