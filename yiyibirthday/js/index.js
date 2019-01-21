@@ -17,7 +17,7 @@ var S = {
   init: function () {
     var action = window.location.href,
         i = action.indexOf('?a=');
-    login-button
+
     S.Drawing.init('.canvas');
     document.body.classList.add('body--ready');
 

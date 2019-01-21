@@ -119,7 +119,6 @@ S.UI = (function () {
     m = m < 10 ? '0' + m : m;
     return h + ':' + m;
   }
-  }
 
   function getValue(value) {
     return value && value.split(' ')[1];
