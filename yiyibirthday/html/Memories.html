@@ -190,7 +190,21 @@
             <div class="ly-triangle23"></div>
         </div>
 
-        <!--第四屏-->
+
+      <!--最后一屏-->
+      <div class="section">
+          <div class="timeline"></div>
+          <div class="timepoint31"></div>
+          <div class="ly-box666">
+              <div class="ly-txt22">
+                  <h1>距离我们在一起过去了(2012年3月14日)</h1>
+                  <p id="changeText" style="color: #fe5d4e; font-weight: bold; font-size: 30px"></p>
+              </div>
+          </div>
+      </div>
+
+
+      <!--第四屏-->
 
         <!--第五屏-->
         <!-- <div class="section">
@@ -436,5 +450,26 @@
     <script src="../js/jquery-1.8.3.min.js"></script>
     <script src="../js/jquery.fullPage.min.js"></script>
     <script src="../js/diy.js"></script>
+
+    <script>
+        function thenceThen(){
+            var date1 = new Date(1331654400000);
+            var totalSecs=(new Date()-date1)/1000;
+            var days=Math.floor(totalSecs/3600/24);
+            var hours=Math.floor((totalSecs-days*24*3600)/3600);
+            var mins=Math.floor((totalSecs-days*24*3600-hours*3600)/60);
+            var secs=Math.floor((totalSecs-days*24*3600-hours*3600-mins*60));
+            if (days != 0 ) {
+                document.getElementById("changeText").innerText=days+"天"+hours+"小时"+mins+"分钟"+secs+"秒";
+            }
+        }
+        var clock;
+        window.onload=function(){
+            clock=self.setInterval("thenceThen()", 500);
+        }
+
+
+    </script>
+
 </body>
 </html>
